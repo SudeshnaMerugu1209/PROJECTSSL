@@ -44,7 +44,16 @@ session_start();
         <input type="submit" value="View Orders" name="view" style="background-color:rgb(66, 43, 22)" >
     </form>
     <br>
+    <br><h3>Returning a book</h3>
+    <div>
+    <form method="post" action="orderadmin.php" >
+        STUDENT ID: <input type="text" name="user_id" style="background-color:rgb(66, 43, 22)" ><br><br>
+        BOOK TITLE: <input type="text" name="book_title" style="background-color:rgb(66, 43, 22)" ><br><br>
+        <input type="submit" value="Return" name="return" style="background-color:rgb(66, 43, 22)" ><br><Br>
+    </form>
     <br>
+    <br>
+    
 </div>
 </body>
 </html>
@@ -57,6 +66,25 @@ $dbname = "Library";
 $conn = new mysqli($servername, $username, $password,$dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
+}
+if(isset($_POST['return']))
+{
+    $id = $_POST['user_id'];
+    $titl = $_POST['book_title'];
+    $query4 = "DELETE FROM Orders WHERE Title = '$titl' AND Customer = '$id'";
+    $conn->query($query4);
+    $resu1 = "SELECT * FROM Orders WHERE Title = '$titl' AND Customer = '$id'";
+    $resu = $conn->query($resu1);
+    if($resu->num_rows==1){
+    echo "<script>alert('Returned');</script>";}
+    else if ($resu->num_rows>1)
+    {
+        echo "<script>alert('User borrowed more than one copy of the same Book!');</script>";
+    }
+    else
+    {
+        echo "<script>alert('No such book borrowed by the student!');</script>";
+    }
 }
 if(isset($_POST['search'])){
     if($_POST['searc']) {

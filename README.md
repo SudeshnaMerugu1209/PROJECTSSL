@@ -1,2 +1,2 @@
-# SSL PROJECT
+# SSL-PROJECT
 Library Management System

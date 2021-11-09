@@ -71,12 +71,15 @@ if(isset($_POST['return']))
 {
     $id = $_POST['user_id'];
     $titl = $_POST['book_title'];
-    $query4 = "DELETE FROM Orders WHERE Title = '$titl' AND Customer = '$id'";
-    $conn->query($query4);
     $resu1 = "SELECT * FROM Orders WHERE Title = '$titl' AND Customer = '$id'";
     $resu = $conn->query($resu1);
+    $query4 = "DELETE FROM Orders WHERE Title = '$titl' AND Customer = '$id'";
+    $conn->query($query4);
     if($resu->num_rows==1){
-    echo "<script>alert('Returned');</script>";}
+    echo "<script>alert('Returned');</script>";
+    $quer = "UPDATE Books SET Quantity = Quantity+1 WHERE Title = '$titl'";
+    $conn->query($quer);
+    }   
     else if ($resu->num_rows>1)
     {
         echo "<script>alert('User borrowed more than one copy of the same Book!');</script>";

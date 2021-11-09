@@ -1,4 +1,4 @@
-Instructions:
+INSTRUCTIONS:
 1. Download the zip file
 2. Go to: http://localhost/<foldername>/main.php
 3. Follow these steps for viewing as an admin:
@@ -33,7 +33,7 @@ GITHUB LINK: https://github.com/SudeshnaMerugu1209/PROJECTSSL.git
 VIDEO LINK: https://youtu.be/5f9ZQqhzUUA
 
 WORK DISTRIBUTION:
-Meghana Sripalle: Main Page contribution, Student Login Page, Admin Login Page, Search bar, View Books, viewstudent css, library database,
-Sahithy Tumma: Main Page contribution, View Orders, Place Orders, Updating books, Returning books, loginadmin css, pictures, Orders Table, Admins Table
-Sudeshna Merugu: Main Page contribution, View Fine for students, View fines for admin, Updating student details, Log out, login css, Students table, Books table
+Meghana Sripalle: Main Page contribution, Student Login Page, Admin Login Page, Search bar, View Books, viewstudent css, library database, home page student
+Sahithy Tumma: Main Page contribution, View Orders, Place Orders, Updating books, Returning books, loginadmin css, pictures, Orders Table, Admins Table, home page admin
+Sudeshna Merugu: Main Page contribution, View Fine for students, View fines for admin, Updating student details, Log out, login css, Students table, Books table, README file
 

@@ -30,4 +30,10 @@ Instructions:
 
 GITHUB LINK: https://github.com/SudeshnaMerugu1209/PROJECTSSL.git
 
-VIDEO LINK : https://youtu.be/5f9ZQqhzUUA
+VIDEO LINK: https://youtu.be/5f9ZQqhzUUA
+
+WORK DISTRIBUTION:
+Meghana Sripalle: Main Page contribution, Student Login Page, Admin Login Page, Search bar, View Books, viewstudent css, library database,
+Sahithy Tumma: Main Page contribution, View Orders, Place Orders, Updating books, Returning books, loginadmin css, pictures, Orders Table, Admins Table
+Sudeshna Merugu: Main Page contribution, View Fine for students, View fines for admin, Updating student details, Log out, login css, Students table, Books table
+
